@@ -154,14 +154,14 @@ a { color: inherit; }
 }
 
 /* ---------- Section shell ---------- */
-section { padding: 56px 0; border-bottom: 1px solid var(--line-soft); }
+section { padding: 64px 0; border-bottom: 1px solid var(--line-soft); }
 section:last-of-type { border-bottom: none; }
 
 .section-head {
     display: flex;
     align-items: baseline;
     gap: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .section-head .no {
@@ -321,7 +321,7 @@ img, svg { max-width: 100%; height: auto; }
 @media (max-width: 760px) {
     .wrap, .nav-row { padding-left: 22px; padding-right: 22px; }
     .hero { padding-top: 48px; padding-bottom: 32px; }
-    section { padding: 42px 0; }
+    section { padding: 50px 0; }
     .hero h1 { font-size: 2.3rem; }
 }
 
