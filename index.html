@@ -3,45 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Profesional</title>
+    <title>Héctor | Desarrollo Web & Ciberseguridad</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HF<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Encabezado / Presentación -->
     <header class="hero">
         <div class="container">
             <h1>Hola, soy Héctor</h1>
             <p class="subtitle">Especialista en Desarrollo Web y Ciberseguridad</p>
-            <p>Bienvenido a mi espacio técnico. Aquí puedes ver mis proyectos más recientes y mi código fuente.</p>
+            <p class="hero-desc">Bienvenido a mi espacio técnico. Aquí puedes consultar mis proyectos, repositorios y despliegues recientes.</p>
         </div>
     </header>
 
     <!-- Sección de Proyectos -->
-    <main class="projects-section container">
+    <main id="proyectos" class="projects-section container">
         <h2>Mis Proyectos</h2>
         <div class="projects-grid">
             
             <!-- Tarjeta Proyecto 1: Ciberseguridad -->
-            <div class="project-card">
-                <h3>Ciberseguridad</h3>
-                <p>Repositorio dedicado a prácticas, análisis y herramientas de seguridad informática.</p>
-                <a href="https://github.com/hectorftr-prog/hectorftr-cybersecurity" target="https://github.com/hectorftr-prog/hectorftr-cybersecurity" class="btn">Ver Código en GitHub</a>
-            </div>
+            <article class="project-card">
+                <div class="card-content">
+                    <h3>Ciberseguridad</h3>
+                    <p>Repositorio dedicado a prácticas de laboratorio, análisis de red, scripts defensivos y auditorías de seguridad informática.</p>
+                    
+                    <div class="tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Wireshark</span>
+                        <span class="tag">Seguridad Redes</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="https://github.com/hectorftr-prog/hectorftr-cybersecurity" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Código en GitHub</a>
+                </div>
+            </article>
 
             <!-- Tarjeta Proyecto 2: Desarrollo Web -->
-            <div class="project-card">
-                <h3>Desarrollo Web</h3>
-                <p>Proyectos de diseño, desarrollo de interfaces y maquetación web moderna.</p>
-                <a href="https://github.com/hectorftr-prog/hectorftr-web-dev" target="https://github.com/hectorftr-prog/hectorftr-web-dev" class="btn">Ver Código en GitHub</a>
-            </div>
+            <article class="project-card">
+                <div class="card-content">
+                    <h3>Desarrollo Web</h3>
+                    <p>Proyectos de diseño de interfaces, maquetación adaptativa y despliegue de sitios en entornos de producción.</p>
+                    
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid / Flexbox</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">FTP / Hosting</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="https://github.com/hectorftr-prog/hectorftr-web-dev" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Código en GitHub</a>
+                    <a href="https://hectorft.infinityfree.io" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Sitio Web</a>
+                </div>
+            </article>
 
         </div>
     </main>
 
     <!-- Pie de página / Contacto -->
-    <footer class="footer">
-        <p>&copy; 2026 Héctor - Conectado mediante GitHub Pages</p>
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/hectorftr-prog" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:hectorftr@gmail.com">Contacto Email</a>
+            </div>
+            <p>&copy; 2026 Héctor - Conectado mediante GitHub Pages</p>
+        </div>
     </footer>
 
 </body>
