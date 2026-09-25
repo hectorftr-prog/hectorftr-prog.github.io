@@ -112,14 +112,15 @@ a { color: inherit; }
 .stat-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--panel);
+    overflow: hidden;
 }
 
 .stat {
     flex: 1 1 160px;
-    padding: 18px 20px 18px 0;
+    padding: 22px 24px;
     border-right: 1px solid var(--line);
 }
 
@@ -127,15 +128,29 @@ a { color: inherit; }
 
 .stat .num {
     font-family: var(--mono);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
     color: var(--paper);
     display: block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.stat .num::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 22px;
+    height: 2px;
+    background: var(--signal);
 }
 
 .stat .label {
     font-size: 0.85rem;
     color: var(--muted);
-    margin-top: 2px;
+    margin-top: 12px;
+    display: block;
 }
 
 /* ---------- Section shell ---------- */
@@ -315,8 +330,9 @@ img, svg { max-width: 100%; height: auto; }
     body { font-size: 16px; }
     .hero h1 { font-size: 2rem; max-width: none; }
     .hero p.lede { font-size: 1.05rem; }
-    .stat { flex: 1 1 45%; border-right: none; border-bottom: 1px solid var(--line); padding: 14px 0; }
-    .stat:nth-child(2n) { padding-left: 16px; }
+    .stat { flex: 1 1 45%; border-right: none; border-bottom: 1px solid var(--line); padding: 16px 18px; }
+    .stat:nth-child(2n) { border-left: 1px solid var(--line); }
+    .stat:nth-last-child(-n+2) { border-bottom: none; }
     .record-head { flex-direction: column; align-items: flex-start; }
     .timeline { padding-left: 22px; }
     .phase::before { left: -22px; }
@@ -330,8 +346,8 @@ img, svg { max-width: 100%; height: auto; }
     .nav-links { gap: 14px; }
     .nav-links a { font-size: 0.78rem; }
     .hero h1 { font-size: 1.7rem; }
-    .stat { flex: 1 1 100%; border-bottom: 1px solid var(--line); padding: 14px 0 !important; }
-    .stat:nth-child(2n) { padding-left: 0; }
+    .stat { flex: 1 1 100%; border-bottom: 1px solid var(--line); border-left: none !important; padding: 16px 18px !important; }
+    .stat:nth-child(2n) { padding-left: 18px; }
     .stat:last-child { border-bottom: none; }
 }
 
