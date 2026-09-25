@@ -85,7 +85,7 @@ a { color: inherit; }
 .nav-links a:hover { color: var(--signal); }
 
 /* ---------- Hero ---------- */
-.hero { padding: 64px 0 40px; }
+.hero { padding-top: 64px; padding-bottom: 40px; }
 
 .hero .kicker {
     font-family: var(--mono);
@@ -305,7 +305,7 @@ img, svg { max-width: 100%; height: auto; }
 /* Tablet / pantallas medianas: se ajustan espaciados generales */
 @media (max-width: 760px) {
     .wrap, .nav-row { padding-left: 22px; padding-right: 22px; }
-    .hero { padding: 48px 0 32px; }
+    .hero { padding-top: 48px; padding-bottom: 32px; }
     section { padding: 42px 0; }
     .hero h1 { font-size: 2.3rem; }
 }
