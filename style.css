@@ -298,12 +298,41 @@ footer {
     color: var(--muted);
 }
 
+img, svg { max-width: 100%; height: auto; }
+
 /* ---------- Responsive ---------- */
+
+/* Tablet / pantallas medianas: se ajustan espaciados generales */
+@media (max-width: 760px) {
+    .wrap, .nav-row { padding-left: 22px; padding-right: 22px; }
+    .hero { padding: 48px 0 32px; }
+    section { padding: 42px 0; }
+    .hero h1 { font-size: 2.3rem; }
+}
+
+/* Móvil */
 @media (max-width: 600px) {
-    .hero h1 { font-size: 2.05rem; max-width: none; }
+    body { font-size: 16px; }
+    .hero h1 { font-size: 2rem; max-width: none; }
+    .hero p.lede { font-size: 1.05rem; }
     .stat { flex: 1 1 45%; border-right: none; border-bottom: 1px solid var(--line); padding: 14px 0; }
     .stat:nth-child(2n) { padding-left: 16px; }
     .record-head { flex-direction: column; align-items: flex-start; }
+    .timeline { padding-left: 22px; }
+    .phase::before { left: -22px; }
+}
+
+/* Móvil estrecho: el menú es lo primero que revienta */
+@media (max-width: 480px) {
+    .wrap, .nav-row { padding-left: 18px; padding-right: 18px; }
+    .nav-row { flex-wrap: wrap; row-gap: 10px; padding-top: 14px; padding-bottom: 14px; }
+    .mark .sub { display: none; }
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 0.78rem; }
+    .hero h1 { font-size: 1.7rem; }
+    .stat { flex: 1 1 100%; border-bottom: 1px solid var(--line); padding: 14px 0 !important; }
+    .stat:nth-child(2n) { padding-left: 0; }
+    .stat:last-child { border-bottom: none; }
 }
 
 /* ---------- Reduced motion ---------- */
